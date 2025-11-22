@@ -10,5 +10,13 @@
   <body>
     <!-- To jest canvas, do którego podepnie się KAPLAY -->
     <canvas id="mycanvas"></canvas>
+    <script>
+function blockMobile() {
+  if (/Mobi|Android/i.test(navigator.userAgent)) {
+    alert("Ta strona jest przeznaczona wyłącznie do wyświetlania na komputerach.");
+    window.location.href = "about:blank"; // Przekierowanie na pustą stronę
+  }
+}
+</script>
   </body>
 </html>
